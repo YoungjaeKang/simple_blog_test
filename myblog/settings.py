@@ -25,7 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = config('DEBUG', default=False, cast=bool)
 SECRET_KEY = config('SECRET_KEY')
 
-ALLOWED_HOSTS = []
+# 개발 중에는 ['*']으로, 이후 다시 설정
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
